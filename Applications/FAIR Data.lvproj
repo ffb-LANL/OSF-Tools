@@ -92,7 +92,7 @@
 			<Item Name="OSF Create Projects.vi" Type="VI" URL="../../Libraries/OSF/OSF Create Projects.vi"/>
 			<Item Name="OSF Create Wiki.vi" Type="VI" URL="../../Libraries/OSF/OSF Create Wiki.vi"/>
 			<Item Name="OSF Format Exp Wiki.vi" Type="VI" URL="../../Libraries/OSF/OSF Format Exp Wiki.vi"/>
-			<Item Name="OSF Read Projects.vi" Type="VI" URL="../OSF Read Projects.vi"/>
+			<Item Name="OSF Read Projects.vi" Type="VI" URL="../../Libraries/OSF/OSF Read Projects.vi"/>
 			<Item Name="OSF Read Wikis.vi" Type="VI" URL="../../Libraries/OSF/OSF Read Wikis.vi"/>
 			<Item Name="Parse File.vi" Type="VI" URL="../../Libraries/Utilities/Parse File.vi"/>
 			<Item Name="Parse iCalendar.vi" Type="VI" URL="../../Libraries/Calendar/Parse iCalendar.vi"/>
@@ -112,6 +112,92 @@
 			<Item Name="UPortal Open URL.vi" Type="VI" URL="../../Libraries/User Portal/UPortal Open URL.vi"/>
 			<Item Name="UPortal Wait on Load.vi" Type="VI" URL="../../Libraries/User Portal/UPortal Wait on Load.vi"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="MagLab OSF File Upload" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{14A2EC49-8D64-42DA-9A04-2B140B7B9834}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{0806E1C1-39D4-4D2A-A800-7499C229A20F}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{DC235487-4AAA-425C-BA10-BC2742C9E579}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">MagLab OSF File Upload</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{2199F548-562F-47F6-ABF3-8B55F0F380C5}</Property>
+				<Property Name="Bld_version.build" Type="Int">2</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">MagLab OSF File Upload.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/MagLab OSF File Upload.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9316391E-98F6-4222-9364-478EF3894EF8}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MagLab OSF Sync .vi</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/OSF Upload File.vi</Property>
+				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[2].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
+				<Property Name="TgtF_companyName" Type="Str">LANL</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="TgtF_internalName" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 LANL</Property>
+				<Property Name="TgtF_productName" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{F7788E1E-6DA0-4B55-8588-62567C321D83}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">MagLab OSF File Upload.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="MagLab OSF Sync" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{9541C70A-1F3B-470D-868F-7A4299E9D5D7}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{0DD4F8CB-99D4-4138-A03F-1B53418C902F}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_serverType" Type="Int">0</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{5BF60186-D578-4854-99E7-93BA26041289}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{34A3844C-99C9-42D9-BBF7-AEDE2E922D4F}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">MagLab OSF Sync.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/MagLab OSF Sync.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9316391E-98F6-4222-9364-478EF3894EF8}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/MagLab OSF Sync .vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">LANL</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="TgtF_internalName" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2021 LANL</Property>
+				<Property Name="TgtF_productName" Type="Str">MagLab OSF Sync</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{727F5954-A8A9-49FA-97D7-E202ABBAD797}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">MagLab OSF Sync.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
